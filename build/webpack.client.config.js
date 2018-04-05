@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const objClientConfig = Object.assign({}, objBaseConfig, {
   plugins: (objBaseConfig.plugins || []).concat([
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
+      name: 'vendorScripts',
       filename: 'assets/js/[name].js'
     })
   ])
