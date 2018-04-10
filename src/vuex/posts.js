@@ -6,7 +6,7 @@ const defaultState = {
 }
 
 const blnInBrowser = typeof window !== 'undefined'
-const state = (blnInBrowser && window.__INITIAL_STATE__) ? window.__INITIAL_STATE__.postsmodule : defaultState
+const state = (blnInBrowser && window.__INITIAL_STATE__) ? window.__INITIAL_STATE__.postsModule : defaultState
 
 const getters = {
   posts: state => state.posts
